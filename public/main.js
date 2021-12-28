@@ -13,13 +13,48 @@ function playSound(e) {
     audio.play();
 }
 
-function stopSound(e) {
-    const key = document.querySelector(`div[data-key="${e.keyCode}"]`);
-    if (!key) return;
-
-    key.classList.remove('playing');
-}
 
 const keys = Array.from(document.querySelectorAll('.key'));
 keys.forEach(key => key.addEventListener('transitionend', removeTransition));
 window.addEventListener('keydown', playSound);
+
+/*
+
+class Keys {
+    constructor(title, keyCode, audio, row) {
+        this.title = title;
+        this.keyCode = keyCode;
+        this.audio = audio;
+        this.row = row;
+    }
+}
+
+var famousKeys = [{
+    title: "Intro",
+    keyCode: "81",
+    audio: "sounds/famous/manintro.mp3"
+}, {
+    title: "Beat",
+    data_key: "87",
+    src: "sounds/famous/sample.wav.mp3"
+}];
+
+// Write class that will create keys
+class Key {
+    constructor(title, keyCode, audio) {
+        this.title = title;
+        this.keyCode = keyCode;
+        this.audio = audio;
+    }
+    render() {
+        const key = document.createElement('div');
+        key.setAttribute('data-key', this.keyCode);
+        key.classList.add('key');
+        key.innerHTML = `
+        <kbd>${this.title}</kbd>
+        <span class="sound">${this.title}</span>
+        `;
+        return key;
+    }
+}
+*/
