@@ -1,8 +1,8 @@
 body {
     min-width: 800px;
-    background: #ff00cc;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #333399, #ff00cc);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #333399, #ff00cc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #8EB1C7;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #333399, #8EB1C7);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #333399, #8EB1C7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   
     margin:0px;
   }
@@ -131,7 +131,7 @@ body {
   h1{
     color: #111; 
     font-family: 'Helvetica Neue', sans-serif; 
-    font-size: 180px; 
+    font-size: 150px; 
     font-weight: bold; 
     letter-spacing: -1px; 
     text-align: left;
@@ -153,7 +153,7 @@ body {
   h3{
     color: #111; 
     font-family: 'Helvetica Neue', sans-serif; 
-    font-size: 90px; 
+    font-size: 120px; 
     font-weight: bold; 
     letter-spacing: -1px; 
     text-align: left;
