@@ -15,12 +15,9 @@ app.set('view engine', 'handlebars');
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-// Homepage Route
-app.get('/', (req, res) =>
-  res.render('runaway', {
-    title: 'Runaway'
-  })
-);
+app.get('/', function(req, res){
+  res.sendFile('home.html', { root: __dirname + "/public" } );
+});
 
 // Set static folder
 app.use(express.static(path.join(__dirname, 'public')));
