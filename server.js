@@ -28,6 +28,10 @@ app.get('/famous',function(req,res){
   res.sendFile(path.join(__dirname+'/public/famous.html'));
 });
 
+app.get('/goodmorning',function(req,res){
+  res.sendFile(path.join(__dirname+'/public/goodmorning.html'));
+});
+
 // Set static folder
 app.use(express.static(path.join(__dirname, 'public')));
 
