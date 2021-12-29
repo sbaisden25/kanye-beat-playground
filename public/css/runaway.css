@@ -47,6 +47,7 @@ html {
     color: white;
     background: rgba(0, 0, 0, 0.5);
     text-shadow: 0 0 .5rem black;
+    display: block;
 }
 
 .playing {
