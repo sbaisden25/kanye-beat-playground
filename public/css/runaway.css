@@ -17,22 +17,17 @@ html {
     min-height: 100vh;
     align-items: center;
     justify-content: center;
+    
 }
 
 /* Css that will make a row of 10 elements */
-.row1 {
+.rows {
     display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-gap: 1px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
     padding: 10px;
 }
 
-.row2 {
-    display: grid;
-    grid-template-columns: repeat(9, 1fr);
-    grid-gap: 1px;
-    padding: 10px;
-}
 
 
 .key {
@@ -42,12 +37,13 @@ html {
     font-size: 1.5rem;
     padding: 1rem .5rem;
     transition: all .07s ease;
-    width: 6rem;
+    width: 8rem;
     text-align: center;
     color: white;
     background: rgba(0, 0, 0, 0.5);
     text-shadow: 0 0 .5rem black;
     display: block;
+    
 }
 
 .playing {
